@@ -1,7 +1,7 @@
 import Sequelize, { Model } from 'sequelize';
 import bcryptjs from 'bcryptjs';
 
-export default class Users extends Model {
+export default class User extends Model {
   static init(sequelize) {
     super.init({
       nome: {
@@ -18,11 +18,11 @@ export default class Users extends Model {
         type: Sequelize.STRING,
         defaultValue: '',
         unique: {
-          msg: 'email ja exite',
+          msg: 'Email já existe',
         },
         validate: {
           isEmail: {
-            msg: 'Email invalido',
+            msg: 'Email inválido',
           },
         },
       },
@@ -36,7 +36,7 @@ export default class Users extends Model {
         validate: {
           len: {
             args: [6, 50],
-            msg: 'Campo nome deve ter entre 6 e 50 caracteres',
+            msg: 'A senha precisa ter entre 6 e 50 caracteres',
           },
         },
       },
