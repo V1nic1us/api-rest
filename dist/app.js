@@ -22,7 +22,7 @@ class App {
   middelewares() {
     this.app.use(_express2.default.urlencoded({ extended: true }));
     this.app.use(_express2.default.json());
-    this.app.use(_express2.default.static(_path.resolve.call(void 0, __dirname, '..', 'uploads', 'imagens')));
+    this.app.use(_express2.default.static(/imagens/resolve(__dirname, '..', 'uploads', 'imagens')));
   }
 
   routes() {

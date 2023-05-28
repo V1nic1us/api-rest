@@ -22,7 +22,7 @@ class App {
   middelewares() {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
-    this.app.use(express.static(resolve(__dirname, '..', 'uploads', 'imagens')));
+    this.app.use(express.static('/imagens/', resolve(__dirname, '..', 'uploads', 'imagens')));
   }
 
   routes() {
