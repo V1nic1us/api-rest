@@ -34,11 +34,11 @@ const corsOptionsDelegate = function (req, callback) {
 class App {
   constructor() {
     this.app = express();
-    this.middelewares();
+    this.middlewares();
     this.routes();
   }
 
-  middelewares() {
+  middlewares() {
     this.app.use(express.urlencoded({ extended: true }));
     this.app.use(express.json());
     this.app.use(express.static(resolve(__dirname, '..', 'uploads', 'imagens')));
