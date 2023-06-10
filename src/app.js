@@ -17,8 +17,8 @@ import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
   `${process.env.APP_URL}`,
-  'http:// localhost:3000',
-  'http:// localhost:3001',
+  'http://localhost:3000',
+  'http://localhost:3001',
 ];
 
 const corsOptionsDelegate = function (req, callback) {
