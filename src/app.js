@@ -7,7 +7,7 @@ import './database';
 
 import express from 'express';
 import cors from 'cors';
-import helmet from 'helmet';
+// import helmet from 'helmet';
 
 import homeRoutes from './routes/homeRoutes';
 import userRoutes from './routes/userRoutes';
@@ -46,7 +46,7 @@ class App {
 
   routes() {
     this.app.use(cors(corsOptionsDelegate));
-    this.app.use(helmet());
+    // this.app.use(helmet());
     this.app.use('/', homeRoutes);
     this.app.use('/users/', userRoutes);
     this.app.use('/tokens/', tokenRoutes);
