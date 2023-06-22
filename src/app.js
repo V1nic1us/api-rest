@@ -16,6 +16,7 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
+  `${process.env.APP_URL}:81`,
   `${process.env.APP_URL}`,
   'http://localhost:3000',
   'http://localhost:3001',
