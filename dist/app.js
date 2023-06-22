@@ -18,7 +18,9 @@ var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopReq
 const whiteList = [
   `${process.env.APP_URL}:81`,
   `${process.env.APP_URL}`,
+  'http://localhost:3000/',
   'http://localhost:3000',
+  'http://localhost:3001/',
   'http://localhost:3001',
 ];
 
