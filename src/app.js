@@ -16,9 +16,10 @@ import alunoRoutes from './routes/alunoRoutes';
 import fotoRoutes from './routes/fotoRoutes';
 
 const whiteList = [
+  `${process.env.APP_URL}`,
+  `${process.env.APP_URL}:80`,
   `${process.env.APP_URL}:81`,
   `${process.env.APP_URL}:82`,
-  `${process.env.APP_URL}`,
   `${process.env.DATABASE_HOST}`,
   `${process.env.DATABASE_HOST}:80`,
   `${process.env.DATABASE_HOST}:81`,

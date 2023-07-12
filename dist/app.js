@@ -16,9 +16,10 @@ var _alunoRoutes = require('./routes/alunoRoutes'); var _alunoRoutes2 = _interop
 var _fotoRoutes = require('./routes/fotoRoutes'); var _fotoRoutes2 = _interopRequireDefault(_fotoRoutes);
 
 const whiteList = [
+  `${process.env.APP_URL}`,
+  `${process.env.APP_URL}:80`,
   `${process.env.APP_URL}:81`,
   `${process.env.APP_URL}:82`,
-  `${process.env.APP_URL}`,
   `${process.env.DATABASE_HOST}`,
   `${process.env.DATABASE_HOST}:80`,
   `${process.env.DATABASE_HOST}:81`,
